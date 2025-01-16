@@ -13,11 +13,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..400&display=swap"
-      rel="stylesheet"
-    />
     <style>
+      @font-face {
+        font-family: "Oregon LDO Regular";
+        font-style: normal;
+        font-weight: normal;
+        src: local("Oregon LDO Regular"), url("Oregon LDO.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "Oregon LDO Bold";
+        font-style: normal;
+        font-weight: normal;
+        src: local("Oregon LDO Bold"),
+          url("Oregon LDO Bold.woff") format("woff");
+      }
+
       body,
       html {
         margin: 0;
@@ -38,7 +49,7 @@
       }
       .overlay {
         text-align: center;
-        font-family: "Oswald", serif;
+        font-family: "Oregon LDO Regular";
         font-optical-sizing: auto;
         font-weight: 300;
         font-style: normal;
@@ -46,6 +57,7 @@
         font-size: 0.7rem;
       }
       h1 {
+        font-family: "Oregon LDO Regular";
         font-size: calc(2rem + 1vw);
         font-weight: 100;
         margin: 0;
@@ -74,7 +86,8 @@
         color: #fff;
       }
       .heavy-text {
-        font-weight: 400;
+        font-family: "Oregon LDO Bold";
+        font-weight: 600;
       }
       .links {
         margin: 2em 0em;
@@ -93,12 +106,17 @@
         height: 50px;
         width: 50px;
       }
+      .logga { 
+        width: 4rem;
+      }
     </style>
   </head>
   <body>
     <div class="background">
       <div class="overlay">
         <!--   <p>Welcome to</p> -->
+        <div></div>
+        <img src="monogram_vitt.png" alt="" class="logga"/>
         <h1>HÅLLFJÄLLET</h1>
         <!--    <p> HOTEL & RESTAURANT : Off-grid restaurant and hotel in Södra Årefjällen, opening 2025.</p> -->
 
