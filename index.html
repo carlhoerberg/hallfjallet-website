@@ -21,184 +21,243 @@
         src: local("Oregon LDO Regular"), url("Oregon LDO.woff") format("woff");
       }
 
-      @font-face {
+      /*     @font-face {
         font-family: "Oregon LDO Bold";
         font-style: normal;
         font-weight: normal;
         src: local("Oregon LDO Bold"),
           url("Oregon LDO Bold.woff") format("woff");
-      }
+      } */
 
       body,
       html {
         margin: 0;
         padding: 0;
         height: 100%;
-        font-size: 14pt;
-        background-color: #a2b9b9;
+        font-size: 14px;
+        font-family: "Oregon LDO Regular";
+        font-weight: 300;
+        background-color: #d5e1e1;
         color: #232525;
       }
-      .background {
-        background-image: url("hallfjallet_fly.webp");
-        background-size: cover;
-        background-position: center;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        letter-spacing: 0.0625em;
+        text-transform: uppercase;
+        /* margin-bottom: 0; */
+        margin-block: 1rem;
       }
-      .overlay {
-        text-align: center;
-        font-family: "Oregon LDO Regular";
-        font-optical-sizing: auto;
-        font-weight: 300;
-        font-style: normal;
-        margin: 1em 0;
-        font-size: 0.7rem;
-      }
+
       h1 {
-        font-family: "Oregon LDO Regular";
-        font-size: calc(2rem + 1vw);
-        font-weight: 100;
-        margin: 0;
-        color: #fff;
+        font-size: 2.986rem;
       }
       h2 {
-        font-size: calc(1.2rem);
-        font-weight: 300;
-        text-transform: uppercase;
-        margin-bottom: 0;
+        font-size: 2.488rem;
       }
       h3 {
-        font-size: calc(1rem);
-        font-weight: 300;
-        text-transform: uppercase;
-        margin-bottom: 0;
+        font-size: 2.074rem;
       }
+      h4 {
+        font-size: 1.728rem;
+      }
+      h5 {
+        font-size: 1.44rem;
+      }
+      h6 {
+        font-size: 1.2rem;
+      }
+
       p {
-        margin: 1em 0 0 0;
+        margin: 1em 0;
       }
+
       a {
         color: rgb(139, 57, 128);
         text-decoration: none;
       }
-      .light-text {
-        color: #fff;
+
+      header {
+        text-align: center;
       }
+
+      main {
+        text-align: left;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      .background {
+        background-image: url("HF_bakgrund.webp");
+        background-size: cover;
+        background-position: center;
+        min-height: 100%;
+        min-width: 470px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .overlay {
+        font-optical-sizing: auto;
+        font-style: normal;
+        margin: 1rem;
+        max-width: 33rem;
+      }
+
       .heavy-text {
-        font-family: "Oregon LDO Bold";
         font-weight: 600;
+        letter-spacing: 0.0625em;
       }
+
+      .italic {
+        font-style: italic;
+      }
+
       .links {
         margin: 2em 0em;
       }
-      .wbox {
-        background-color: white;
-        padding: 10px 30px;
-        margin: 0em 1em;
-      }
-      .wbox a {
-        color: #4b5a5d;
-        text-decoration: none;
-      }
+
       .links svg {
         vertical-align: middle;
         height: 50px;
         width: 50px;
       }
-      .logga { 
+
+      .logga {
         width: 4rem;
+      }
+
+      .flex {
+        display: flex;
+        justify-content: center;
+      }
+      .flex > div {
+        flex-basis: 50%;
+        padding: 0 1rem 0 0;
       }
     </style>
   </head>
+
   <body>
     <div class="background">
       <div class="overlay">
-        <!--   <p>Welcome to</p> -->
-        <div></div>
-        <img src="monogram_vitt.png" alt="" class="logga"/>
-        <h1>HÅLLFJÄLLET</h1>
-        <!--    <p> HOTEL & RESTAURANT : Off-grid restaurant and hotel in Södra Årefjällen, opening 2025.</p> -->
+        <header>
+          <img src="monogram_svart.png" alt="" class="logga" />
+          <h6>VÄLKOMMEN TILL</h6>
+          <h4>HÅLLFJÄLLETS TÄLTKÅTA</h4>
+        </header>
+        <main>
+          <p>
+            Under tiden Hållfjället renoveras hälsar vi er varmt välkomna till
+            Hållfjällets utpost, Tältkåtan. Här serverar vi fika, varma luncher
+            och dryck.
+          </p>
 
-        <p>
-          Under tiden Hållfjället renoveras välkomnar vi till varma luncher och
-          fika i vår kåta.
-        </p>
+          <div class="flex">
+            <div>
+              <h6>Tältkåtans öppettider</h6>
 
-        <h2>Kåtans öppettider</h2>
+              <p>
+                <span class="heavy-text"> 10 februari - 9 mars</span>
+                <br />
+                måndag - söndag 11:00-15:00
+              </p>
+              <p>
+                <span class="heavy-text"> 15 mars - 13 april</span>
+                <br />
+                lördag och söndag 11:00-15:00
+              </p>
+              <p>
+                <span class="heavy-text"> 14 april - 24 april</span>
+                <br />
+                måndag - söndag 11:00-15:00
+              </p>
 
-        <p>
-          <span class="heavy-text">10 februari - 9 mars</span> måndag - söndag
-          11:00-15:00 <br />
-          <span class="heavy-text">15 mars - 13 april</span> lördag och söndag
-          11:00-15:00
-        </p>
+              <p>
+                <span class="heavy-text italic">OBSERVERA</span> att våra
+                öppettider kan påverkas av väder och vind, så håll utkik på vår
+                instagram:
+                <a
+                  href="https://instagram.com/hallfjallet_1943"
+                  target="_blank"
+                  title="Instagram"
+                  class="heavy-text"
+                  >@hallfjallet_1943
+                </a>
+                för uppdateringar. Slå gärna på notifikationerna så missar du
+                inte det senaste.
+              </p>
+            </div>
 
-        <p>
-          Med reservation för eventuella förändringar beroende på väder och
-          vind. Vi uppdaterar dagligen på vårat instagram:
-          <a
-            href="https://instagram.com/hallfjallet_1943"
-            target="_blank"
-            title="Instagram"
-            >hallfjallet_1943
-          </a>
-        </p>
+            <div>
+              <h6>Hitta till oss</h6>
 
-        <!--   <p> -->
-        <h2>Hitta hit</h2>
+              <p>
+                <span class="heavy-text">På skidor:</span>
+                Från Ottsjö spårcentral följer du Hållfjällsleden (nr 164) i ca
+                7 km. Följ skyltarna mot Hållfjället. Se karta
+                <a
+                  href="Karta_Hållfjället.webp"
+                  target="_blank"
+                  title="Skoter karta"
+                  class="heavy-text"
+                  >HÄR</a
+                >
+              </p>
 
-        <p>
-          <span class="heavy-text">På skidor:</span>
-          Följ hållfjällsleden 164 från Ottsjö spårcentral. Skyltat mot
-          Hållfjället.
-          <a href="Karta_Hållfjället.webp" target="_blank" title="Skoter karta"
-            >Karta</a
-          >
-        </p>
+              <p>
+                <span class="heavy-text">På skoter: </span>
+                Karta hittar du
+                <a
+                  href="https://vasek.se/wp-content/uploads/VASEK-kartblad-A4-8-Trillevallen-Ottsjo-Valadalen-230508.pdf"
+                  target="_blank"
+                  title="Skoter karta"
+                  class="heavy-text"
+                >
+                  HÄR
+                </a>
+              </p>
 
-        <p>
-          <span class="heavy-text">På skoter: </span>
-          <a
-            href="https://vasek.se/wp-content/uploads/VASEK-kartblad-A4-8-Trillevallen-Ottsjo-Valadalen-230508.pdf"
-            target="_blank"
-            title="Skoter karta"
-          >
-            Karta
-          </a>
-        </p>
-        <!--  </p> -->
+              <br />
 
-        <!--   <div class="wbox"> -->
-        <h2>Jobba med oss</h2>
+              <h6>Jobba med oss</h6>
 
-        <p>
-          Vill du jobba med oss? Skicka ett mejl till
-          <a href="mailto:info@hallfjallet.se" title="Kontakta oss via mejl">
-            info@hallfjallet.se
-          </a>
-        </p>
-        <!--   </div> -->
+              <p>
+                Vill du jobba med oss? Skicka ett mejl till
+                <a
+                  href="mailto:info@hallfjallet.se"
+                  title="Kontakta oss via mejl"
+                  class="heavy-text"
+                >
+                  info@hallfjallet.se
+                </a>
+              </p>
+            </div>
+          </div>
+        </main>
 
-        <div class="links">
-          <!--       <span class="wbox"
-            ><a href="mailto:info@hallfjallet.se" title="Contact us by email"
-              >Contact</a
-            ></span
-          > -->
-          <a
-            href="https://instagram.com/hallfjallet_1943"
-            target="_blank"
-            title="Instagram"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg">
-              <path
-                fill="#fff"
-                d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"
-              ></path>
-            </svg>
-          </a>
-        </div>
+        <!--  <footer>
+          <div class="links">
+            <a
+              href="https://instagram.com/hallfjallet_1943"
+              target="_blank"
+              title="Instagram"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill="#232525"
+                  d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </footer> -->
       </div>
     </div>
   </body>
