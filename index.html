@@ -49,6 +49,7 @@
       h6 {
         letter-spacing: 0.0625em;
         text-transform: uppercase;
+        font-weight: 400;
         /* margin-bottom: 0; */
         margin-block: 1rem;
       }
@@ -139,8 +140,12 @@
         justify-content: center;
       }
       .flex > div {
-        flex-basis: 50%;
-        padding: 0 1rem 0 0;
+        min-width: 1rem;
+        /*  flex-basis: 50%;
+        padding: 0 1rem 0 0; */
+      }
+      .content_column {
+        flex: 1 0 30%;
       }
     </style>
   </head>
@@ -161,7 +166,7 @@
           </p>
 
           <div class="flex">
-            <div>
+            <div class="content_column">
               <h6>Tältkåtans öppettider</h6>
 
               <p>
@@ -196,7 +201,9 @@
               </p>
             </div>
 
-            <div>
+            <div></div>
+
+            <div class="content_column">
               <h6>Hitta till oss</h6>
 
               <p>
