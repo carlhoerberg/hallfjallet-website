@@ -37,6 +37,7 @@
         font-size: 14px;
         font-family: "Oregon LDO Regular";
         font-weight: 300;
+        font-kerning: none;
         background-color: #d5e1e1;
         color: #232525;
       }
@@ -151,6 +152,10 @@
       .content_column {
         flex: 1 0 30%;
       }
+
+      .top-space {
+        margin-top: 2.3em;
+      }
     </style>
   </head>
 
@@ -163,7 +168,7 @@
           <h4>HÅLLFJÄLLETS TÄLTKÅTA</h4>
         </header>
         <main>
-          <p>
+          <p class="top-space">
             Under tiden Hållfjället renoveras hälsar vi er varmt välkomna till
             Hållfjällets utpost, Tältkåtan. Här serverar vi fika, varma luncher
             och dryck.
@@ -189,15 +194,14 @@
                 måndag - söndag 11:00-15:00
               </p>
 
-              <p>
-                <span class="heavy-text italic">OBSERVERA</span> att våra
-                öppettider kan påverkas av väder och vind, så håll utkik på vår
-                instagram:
+              <p class="top-space">
+                <span class="heavy-text">OBSERVERA</span> att våra öppettider
+                kan påverkas av väder och vind, så håll utkik på vår instagram:
                 <a
                   href="https://instagram.com/hallfjallet_1943"
                   target="_blank"
                   title="Instagram"
-                  class="heavy-text underline"
+                  class="heavy-text italic"
                   >@hallfjallet_1943
                 </a>
                 för uppdateringar. Slå gärna på notifikationerna så missar du
@@ -236,16 +240,16 @@
                 </a>
               </p>
 
-              <br />
-
-              <h6>Jobba med oss</h6>
+              <h6 class="top-space">Jobba med oss</h6>
 
               <p>
-                Vill du jobba med oss? Skicka ett mejl till
+                Vill du jobba med oss?
+                <br />
+                Skicka ett mejl till
                 <a
                   href="mailto:info@hallfjallet.se"
                   title="Kontakta oss via mejl"
-                  class="heavy-text underline"
+                  class="heavy-text italic"
                 >
                   info@hallfjallet.se
                 </a>
