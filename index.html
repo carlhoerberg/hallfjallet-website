@@ -7,16 +7,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hållfjället - Off-grid restaurant and hotel in Södra Årefjällen, opening 2025">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
+      @font-face {
+        font-family: "Oregon LDO Regular";
+        font-style: normal;
+        font-weight: normal;
+        src: local("Oregon LDO Regular"), url("Oregon LDO.woff") format("woff");
+      }
       body, html {
         margin: 0;
         padding: 0;
         height: 100%;
         font-size: 14pt;
-        color: #fff;
+        color: #434340;
+        font-family: "Oregon LDO Regular";
+        font-weight: 300;
+        font-kerning: none;
       }
       .background {
         position: relative;
@@ -35,17 +41,21 @@
         width: auto;
         height: auto;
         transform: translate(-50%, -50%);
+        z-index: -2;
+      }
+      .background::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 240, 0.5);
         z-index: -1;
       }
       .overlay {
         text-align: center;
-        font-family: "Josefin Sans", sans-serif;
-      }
-      h1 {
-        font-family: "Playfair Display", serif;
-        font-size: calc(3rem + 6vw);
-        font-weight: 700;
-        margin: 0;
+        max-width: 550px;
       }
       p {
         margin: 1em 0 0 0;
@@ -67,13 +77,22 @@
         height: 50px;
         width: 50px;
       }
-      iframe {
-        width: 560px;
-        height: 430px;
-        border: 0;
+      #subForm {
+        margin: 2em 0;
+        padding: 1em;
+        display: block;
         border-radius: 25px;
         background: rgba(255,255,255, 0.1);
         backdrop-filter: blur(5px);
+      }
+      #subForm button {
+      }
+      #subForm input {
+        font-size: 1em;
+        padding: 0.5em;
+      }
+      button, input {
+        font-family: "Josefin Sans", sans-serif;
       }
       .logo img {
         width: 180px;
@@ -91,8 +110,18 @@
           <img src="HF_logotype_2-rad_bergtagen_rgb.png"/>
         </div>
         <div>
-          <iframe src="https://cdn.forms-content-1.sg-form.com/3d3e04a0-46b9-11f0-ac0c-eeb338c979db"></iframe>
+          <h2>Welcome to sign up for our waiting list</h2>
+          <div>
+            <div>
+              <p>We will personally contact you when bookings can be made and you will be our much honored and prioritized guest.</p>
+            </div>
+            <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="191722FC90141D02184CB1B62AB3DC26C1B6A77D69F70EA1F103163A571EFF29ECB35542FD8463B31CC684AF0D6D4D5268A01C49C7998C2290D0B81199BE9370">
+              <input autocomplete="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-tjhhhrl-tjhhhrl" required="" type="email" placeholder="E-mail address">
+              <button type="submit" class="wbox">Subscribe</button>
+            </form>
+          </div>
         </div>
+        <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
         <div class="links">
           <span class="wbox"><a href="mailto:info@hallfjallet.se" title="Contact us by email">Contact</a></span>
           <a href="https://instagram.com/hallfjallet_1943" target="_blank" title="Instagram">
