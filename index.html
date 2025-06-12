@@ -14,15 +14,19 @@
         font-weight: normal;
         src: local("Oregon LDO Regular"), url("Oregon LDO.woff") format("woff");
       }
+      @font-face {
+        font-family: "Swisse Neue Regular";
+        src: url("SuisseNeue-Regular-WebS.woff") format("woff");
+        font-style: normal;
+        font-weight: normal;
+        font-display: swap;
+      }
       body, html {
         margin: 0;
         padding: 0;
         height: 100%;
-        font-size: 14pt;
         color: #434340;
-        font-family: "Oregon LDO Regular";
-        font-weight: 300;
-        font-kerning: none;
+        font-family: "Swisse Neue Regular";
       }
       .background {
         padding: 60px 10px;
@@ -61,13 +65,16 @@
         margin: 1em 0 0 0;
         line-height: 1.5em;
         letter-spacing: 1px;
-        font-weight: 600;
+        font-size: 12pt;
       }
       h2 {
+        font-family: "Oregon LDO Regular";
         letter-spacing: .0625em;
         text-transform: uppercase;
         font-weight: 400;
         font-size: 32px;
+        font-weight: 300;
+        font-kerning: none;
       }
       .links {
         margin: 2em 0em;
@@ -87,13 +94,13 @@
         width: 50px;
       }
       #subForm {
-        margin: 2em 100px;
+        margin: 60px 100px 1em;
         display: block;
       }
       #subForm input, #subForm button {
-        font-size: 1em;
-        padding: 1em;
+        padding: 0 16px;
         width: 100%;
+        height: 50px;
         border-width: 1px;
         background-color: rgb(237, 235, 222);
         border-radius: 4px;
@@ -101,13 +108,23 @@
         margin: 1em 0;
         color: rgb(67, 67, 65);
         box-sizing: border-box;
-        letter-spacing: 1px;
+        font-size: 16px;
+      }
+      #subForm button {
+        font-size: 14px;
+        cursor: pointer;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
       }
       button, input {
-        font-family: "Oregon LDO Regular";
+        font-family: "Swisse Neue Regular";
       }
-      button {
-        cursor: pointer;
+      #subForm button:hover {
+        background-color: rgb(67, 67, 65);
+        color: rgb(237, 235, 222);
       }
       .logo img {
         width: 125px;
@@ -131,10 +148,10 @@
               <p>We will personally contact you when bookings can be made and you will be our much honored and prioritized guest.</p>
             </div>
             <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="191722FC90141D02184CB1B62AB3DC26C1B6A77D69F70EA1F103163A571EFF29ECB35542FD8463B31CC684AF0D6D4D5268A01C49C7998C2290D0B81199BE9370">
-              <input id="fieldName" maxlength="200" name="cm-name" placeholder="Your name">
-              <input autocomplete="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-tjhhhrl-tjhhhrl" placeholder="Your email" required="" type="email">
+              <input id="fieldName" maxlength="200" name="cm-name" placeholder="Enter your full name">
+              <input autocomplete="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-tjhhhrl-tjhhhrl" placeholder="Enter your email address" required="" type="email">
               <button type="submit">Add me to the waiting list
-                <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 456.147 456.147" xml:space="preserve">
+                <svg fill="currentColor" version="1.1" id="paperplane" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 456.147 456.147" xml:space="preserve">
                   <g>
                   <path d="M445.666,4.445c-4.504-4.858-11.756-5.954-17.211-2.19L12.694,290.14c-3.769,2.609-5.878,7.012-5.555,11.586
                   c0.323,4.574,3.041,8.635,7.139,10.686l95.208,47.607l37.042,86.43c1.78,4.156,5.593,7.082,10.064,7.727
@@ -144,8 +161,8 @@
                   l-27.206-63.48L359.23,113.665L197.278,374.771c-0.836,0.612-1.634,1.305-2.331,2.146L162.003,416.703z M312.148,424.651
                   l-88.604-43.014L400.427,96.462L312.148,424.651z"/>
                   </g>
+                </svg>
               </button>
-              </svg>
             </form>
           </div>
         </div>
