@@ -25,12 +25,12 @@
         font-kerning: none;
       }
       .background {
-        position: relative;
-        height: 100%;
+        padding: 60px 10px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        height: 100%;
         overflow: hidden;
+        position: relative;
       }
       .background video {
         position: absolute;
@@ -55,10 +55,19 @@
       }
       .overlay {
         text-align: center;
-        max-width: 550px;
+        max-width: 740px;
       }
       p {
         margin: 1em 0 0 0;
+        line-height: 1.5em;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+      h2 {
+        letter-spacing: .0625em;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 32px;
       }
       .links {
         margin: 2em 0em;
@@ -78,23 +87,31 @@
         width: 50px;
       }
       #subForm {
-        margin: 2em 1em;
-        padding: 1em;
+        margin: 2em 100px;
         display: block;
-        border-radius: 25px;
-        background: rgba(255,255,255, 0.1);
-        backdrop-filter: blur(5px);
       }
       #subForm input, #subForm button {
         font-size: 1em;
-        padding: 0.5em;
+        padding: 1em;
+        width: 100%;
+        border-width: 1px;
+        background-color: rgb(237, 235, 222);
+        border-radius: 4px;
+        border-color: rgb(67, 67, 65);
+        margin: 1em 0;
+        color: rgb(67, 67, 65);
+        box-sizing: border-box;
+        letter-spacing: 1px;
       }
       button, input {
         font-family: "Oregon LDO Regular";
       }
+      button {
+        cursor: pointer;
+      }
       .logo img {
-        width: 180px;
-        margin-bottom:1em
+        width: 125px;
+        margin-bottom: 1.5em;
       }
     </style>
   </head>
@@ -114,12 +131,26 @@
               <p>We will personally contact you when bookings can be made and you will be our much honored and prioritized guest.</p>
             </div>
             <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="191722FC90141D02184CB1B62AB3DC26C1B6A77D69F70EA1F103163A571EFF29ECB35542FD8463B31CC684AF0D6D4D5268A01C49C7998C2290D0B81199BE9370">
-              <input autocomplete="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-tjhhhrl-tjhhhrl" required="" type="email" placeholder="E-mail address">
-              <button type="submit" class="wbox">Subscribe</button>
+              <input id="fieldName" maxlength="200" name="cm-name" placeholder="Your name">
+              <input autocomplete="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-tjhhhrl-tjhhhrl" placeholder="Your email" required="" type="email">
+              <button type="submit">Add me to the waiting list
+                <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 456.147 456.147" xml:space="preserve">
+                  <g>
+                  <path d="M445.666,4.445c-4.504-4.858-11.756-5.954-17.211-2.19L12.694,290.14c-3.769,2.609-5.878,7.012-5.555,11.586
+                  c0.323,4.574,3.041,8.635,7.139,10.686l95.208,47.607l37.042,86.43c1.78,4.156,5.593,7.082,10.064,7.727
+                  c0.621,0.091,1.242,0.136,1.856,0.136c3.833,0,7.506-1.697,9.989-4.701l38.91-46.994l107.587,52.227
+                  c1.786,0.867,3.725,1.306,5.663,1.306c1.836,0,3.674-0.393,5.384-1.171c3.521-1.604,6.138-4.694,7.146-8.432L448.37,18.128
+                  C449.314,14.629,449.878,8.988,445.666,4.445z M343.154,92.883L116.681,334.604l-71.208-35.603L343.154,92.883z M162.003,416.703
+                  l-27.206-63.48L359.23,113.665L197.278,374.771c-0.836,0.612-1.634,1.305-2.331,2.146L162.003,416.703z M312.148,424.651
+                  l-88.604-43.014L400.427,96.462L312.148,424.651z"/>
+                  </g>
+              </button>
+              </svg>
             </form>
           </div>
         </div>
         <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+        <!--
         <div class="links">
           <span class="wbox"><a href="mailto:info@hallfjallet.se" title="Contact us by email">Contact</a></span>
           <a href="https://instagram.com/hallfjallet_1943" target="_blank" title="Instagram">
@@ -128,6 +159,7 @@
             </svg>
           </a>
         </div>
+        -->
       </div>
     </div>
   </body>
