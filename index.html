@@ -1,193 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>Hållfjället</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Hållfjället - Off-grid restaurant and hotel in Södra Årefjällen, opening 2025" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <style>
-    @font-face {
-      font-family: "Oregon LDO Regular";
-      font-style: normal;
-      font-weight: normal;
-      src: local("Oregon LDO Regular"), url("Oregon LDO.woff") format("woff");
-    }
-
-    body,
-    html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-size: 14px;
-      font-family: "Oregon LDO Regular";
-      font-weight: 300;
-      font-kerning: none;
-      background-color: #d5e1e1;
-      color: #232525;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      letter-spacing: 0.0625em;
-      text-transform: uppercase;
-      font-weight: 400;
-      /* margin-bottom: 0; */
-      margin-block: 1rem;
-    }
-
-    h1 {
-      font-size: 2.986rem;
-    }
-
-    h2 {
-      font-size: 2.488rem;
-    }
-
-    h3 {
-      font-size: 2.074rem;
-    }
-
-    h4 {
-      font-size: 1.728rem;
-    }
-
-    h5 {
-      font-size: 1.44rem;
-    }
-
-    h6 {
-      font-size: 1.2rem;
-    }
-
-    p {
-      margin: 1em 0;
-    }
-
-    a {
-      color: #232525;
-      text-decoration: none;
-    }
-
-    header {
-      text-align: center;
-    }
-
-    main {
-      text-align: center;
-    }
-
-    footer {
-      text-align: center;
-    }
-
-    .background {
-      background-image: url("HF_bakgrund.webp");
-      background-size: cover;
-      background-position: center;
-      min-height: 100%;
-      /*   min-width: 470px; */
-      display: flex;
-      justify-content: center;
-    }
-
-    .overlay {
-      font-optical-sizing: auto;
-      font-style: normal;
-      margin: 1rem;
-      max-width: 33rem;
-      height: 1000px;
-    }
-
-    .heavy-text {
-      font-weight: 600;
-      letter-spacing: 0.0625em;
-    }
-
-    .italic {
-      font-style: italic;
-    }
-
-    .underline {
-      text-decoration: underline;
-    }
-
-    .links {
-      margin: 2em 0em;
-    }
-
-    .links svg {
-      vertical-align: middle;
-      height: 50px;
-      width: 50px;
-    }
-
-    .logga {
-      width: 4rem;
-    }
-
-    .flex {
-      display: flex;
-      justify-content: center;
-    }
-
-    .flex>div {
-      min-width: 1rem;
-    }
-
-    .content_column {
-      flex: 1 0 30%;
-    }
-
-    .top-space {
-      margin-top: 4em;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="background">
-    <div class="overlay">
-      <header>
-        <img src="monogram_svart.png" alt="" class="logga" />
-        <h6>VÄLKOMMEN TILL</h6>
-        <h4>HÅLLFJÄLLET</h4>
-      </header>
-      <main>
-        <p class="top-space">
-          Öppnar sensommaren 2025
-        </p>
-
-        <p class="top-space">
-          Följ oss på Instagram
-          <a href="https://instagram.com/hallfjallet_1943" target="_blank" title="Instagram"
-            class="heavy-text">@hallfjallet_1943
+  <head>
+    <title>Hållfjället</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hållfjället - Off-grid restaurant and hotel in Södra Årefjällen, opening 2025">
+    <style>
+      @font-face {
+        font-family: "Oregon LDO Regular";
+        font-style: normal;
+        font-weight: normal;
+        src: local("Oregon LDO Regular"), url("Oregon LDO.woff") format("woff");
+      }
+      @font-face {
+        font-family: "Swisse Neue Regular";
+        src: url("SuisseNeue-Regular-WebS.woff") format("woff");
+        font-style: normal;
+        font-weight: normal;
+        font-display: swap;
+      }
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        color: #434340;
+        font-family: "Swisse Neue Regular";
+      }
+      .background {
+        padding: 60px 10px;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+      .background video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        z-index: -2;
+      }
+      .background::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 240, 0.6);
+        z-index: -1;
+      }
+      .overlay {
+        text-align: center;
+        max-width: 740px;
+      }
+      p {
+        margin: 1em 0 0 0;
+        line-height: 1.5em;
+        letter-spacing: 1px;
+        font-size: 12pt;
+      }
+      h2 {
+        font-family: "Oregon LDO Regular";
+        letter-spacing: .0625em;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 32px;
+        font-weight: 300;
+        font-kerning: none;
+      }
+      .links {
+        margin: 2em 0em;
+      }
+      .wbox {
+        background-color: white;
+        padding: 10px 30px;
+        margin: 0em 1em;
+      }
+      .wbox a {
+        color: #4b5a5d;
+        text-decoration: none;
+      }
+      .links svg {
+        vertical-align: middle;
+        height: 50px;
+        width: 50px;
+      }
+      #subForm {
+        margin: 60px 100px 1em;
+        display: block;
+      }
+      #subForm input, #subForm button {
+        padding: 0 16px;
+        width: 100%;
+        height: 50px;
+        border-width: 1px;
+        background-color: rgb(237, 235, 222);
+        border-radius: 4px;
+        border-color: rgb(67, 67, 65);
+        margin: 1em 0;
+        color: rgb(67, 67, 65);
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      #subForm button {
+        font-size: 14px;
+        cursor: pointer;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+      button, input {
+        font-family: "Swisse Neue Regular";
+      }
+      #subForm button:hover {
+        background-color: rgb(67, 67, 65);
+        color: rgb(237, 235, 222);
+      }
+      .logo img {
+        width: 125px;
+        margin-bottom: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="hallfjallet-compressed.mp4" type="video/mp4">
+      </video>
+      <div class="overlay">
+        <div class="logo">
+          <img src="HF_logotype_2-rad_bergtagen_rgb.png"/>
+        </div>
+        <div>
+          <h2>Welcome to sign up for our waiting list</h2>
+          <div>
+            <div>
+              <p>We will personally contact you when bookings can be made and you will be our much honored and prioritized guest.</p>
+            </div>
+            <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="191722FC90141D02184CB1B62AB3DC26C1B6A77D69F70EA1F103163A571EFF29ECB35542FD8463B31CC684AF0D6D4D5268A01C49C7998C2290D0B81199BE9370">
+              <input id="fieldName" maxlength="200" name="cm-name" placeholder="Enter your full name">
+              <input autocomplete="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-tjhhhrl-tjhhhrl" placeholder="Enter your email address" required="" type="email">
+              <button type="submit">Add me to the waiting list
+                <svg fill="currentColor" version="1.1" id="paperplane" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 456.147 456.147" xml:space="preserve">
+                  <g>
+                  <path d="M445.666,4.445c-4.504-4.858-11.756-5.954-17.211-2.19L12.694,290.14c-3.769,2.609-5.878,7.012-5.555,11.586
+                  c0.323,4.574,3.041,8.635,7.139,10.686l95.208,47.607l37.042,86.43c1.78,4.156,5.593,7.082,10.064,7.727
+                  c0.621,0.091,1.242,0.136,1.856,0.136c3.833,0,7.506-1.697,9.989-4.701l38.91-46.994l107.587,52.227
+                  c1.786,0.867,3.725,1.306,5.663,1.306c1.836,0,3.674-0.393,5.384-1.171c3.521-1.604,6.138-4.694,7.146-8.432L448.37,18.128
+                  C449.314,14.629,449.878,8.988,445.666,4.445z M343.154,92.883L116.681,334.604l-71.208-35.603L343.154,92.883z M162.003,416.703
+                  l-27.206-63.48L359.23,113.665L197.278,374.771c-0.836,0.612-1.634,1.305-2.331,2.146L162.003,416.703z M312.148,424.651
+                  l-88.604-43.014L400.427,96.462L312.148,424.651z"/>
+                  </g>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+        <!--
+        <div class="links">
+          <span class="wbox"><a href="mailto:info@hallfjallet.se" title="Contact us by email">Contact</a></span>
+          <a href="https://instagram.com/hallfjallet_1943" target="_blank" title="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <path fill="#fff" d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+            </svg>
           </a>
-          för senaste nytt.
-        </p>
-
-        <h6 class="top-space">Kontakt</h6>
-
-        <p>
-          För frågor och bokningar kontakta
-          <a href="mailto:info@hallfjallet.se" title="Kontakta oss via mejl" class="heavy-text">
-            info@hallfjallet.se
-          </a>
-        </p>
-
-      </main>
-
+        </div>
+        -->
+      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
