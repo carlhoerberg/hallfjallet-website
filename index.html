@@ -171,6 +171,26 @@
         <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
       </div>
     </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const video = document.querySelector('video');
+  
+  if (video) {
+    video.muted = true;
+    video.playsInline = true;
+    
+    // Attempt to play
+    const playPromise = video.play();
+    
+    if (playPromise !== undefined) {
+      playPromise.catch(error => {
+        console.log('Autoplay prevented:', error);
+        // Fallback: show poster image or handle gracefully
+      });
+    }
+  }
+});
+<script>
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "84e52339881546d7abd9d860dc67386f"}'></script>
   </body>
 </html>
